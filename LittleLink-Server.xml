@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>LittleLink-Server</Name>
+  <Repository>ghcr.io/techno-tim/littlelink-server:latest</Repository>
+  <Registry>https://hub.docker.com/r/timothystewart6/littlelink-server</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/techno-tim/littlelink-server/issues</Support>
+  <Project>https://github.com/techno-tim/littlelink-server</Project>
+  <Overview>LittleLink is a lightweight DIY alternative to services like Linktree and many.link. LittleLink was built using Skeleton, a dead simple, responsive boilerplate&#x2014;we just stripped out some additional code you wouldn't need and added in branded styles for popular services. &#x1F60A;&#xD;
+LittleLink has more than 20 company button styles you can use and we'll be throwing more in soon. You'll also find a light and dark theme ready to go.(From Sethcottlem, the Original Author)&#xD;
+&#xD;
+This project is based on the great work from LittleLink, It takes the same simple approach to a link page and hosts it within a NodeJS server with React Server Side Rendering, containerized for you to use. Now, customizing LittleLink with littlelink-server is as easy as passing in some environment variables.&#xD;
+ If you need help configuring this, please see https://www.youtube.com/watch?v=42SqfI_AjXU and a live example at https://technotim.live/&#xD;
+(From techno-tim, This Docker Author)&#xD;
+&#xD;
+If you want to change WebUI Port,Change WebUI port,and turn on advanced view, change again WebUI port.</Overview>
+  <Category>Productivity: Tools: Other: Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:1000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://littlelink.io/images/avatar.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1639206027</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>LittleLink is a lightweight DIY alternative to services like Linktree and many.link. LittleLink was built using Skeleton, a dead simple, responsive boilerplate&#x2014;we just stripped out some additional code you wouldn't need and added in branded styles for popular services. &#x1F60A;&#xD;
+LittleLink has more than 20 company button styles you can use and we'll be throwing more in soon. You'll also find a light and dark theme ready to go.(From Sethcottlem, the Original Author)&#xD;
+&#xD;
+This project is based on the great work from LittleLink, It takes the same simple approach to a link page and hosts it within a NodeJS server with React Server Side Rendering, containerized for you to use. Now, customizing LittleLink with littlelink-server is as easy as passing in some environment variables.&#xD;
+ If you need help configuring this, please see https://www.youtube.com/watch?v=42SqfI_AjXU and a live example at https://technotim.live/&#xD;
+(From techno-tim, This Docker Author)&#xD;
+&#xD;
+If you want to change WebUI Port,Change WebUI port,and turn on advanced view, change again WebUI port.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>Techno Tim</Value>
+      <Name>META_TITLE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Techno Tim Link page</Value>
+      <Name>META_DESCRIPTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Techno Tim</Value>
+      <Name>META_AUTHOR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>en</Value>
+      <Name>LANG</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>all</Value>
+      <Name>META_INDEX_STATUS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>G-XXXXXXXXXX</Value>
+      <Name>GA_TRACKING_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Dark</Value>
+      <Name>THEME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg</Value>
+      <Name>FAVICON_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>qIAsKOpB_200x200.jpg</Value>
+      <Name>AVATAR_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg</Value>
+      <Name>AVATAR_2X_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Techno Tim Profile Pic</Value>
+      <Name>AVATAR_ALT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>TechnoTim</Value>
+      <Name>NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Hey! Just a place where you can connect with me!</Value>
+      <Name>BIO</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Thanks for stopping by!</Value>
+      <Name>FOOTER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://github.com/timothystewart6</Value>
+      <Name>GITHUB</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://twitter.com/TechnoTimLive</Value>
+      <Name>TWITTER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.instagram.com/techno.tim</Value>
+      <Name>INSTAGRAM</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A</Value>
+      <Name>YOUTUBE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.twitch.tv/technotim/</Value>
+      <Name>TWITCH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://discord.gg/DJKexrJ</Value>
+      <Name>DISCORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.tiktok.com/@technotim</Value>
+      <Name>TIKTOK</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://kit.co/TechnoTim</Value>
+      <Name>KIT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://facebook.com</Value>
+      <Name>FACEBOOK</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://facebook.com</Value>
+      <Name>FACEBOOK_MESSENGER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://linkedin.com</Value>
+      <Name>LINKED_IN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.producthunt.com/</Value>
+      <Name>PRODUCT_HUNT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.snapchat.com/</Value>
+      <Name>SNAPCHAT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.spotify.com/</Value>
+      <Name>SPOTIFY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.reddit.com/</Value>
+      <Name>REDDIT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://medium.com</Value>
+      <Name>MEDIUM</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.pinterest.com/</Value>
+      <Name>PINTEREST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>you@example.com</Value>
+      <Name>EMAIL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Email Me!</Value>
+      <Name>EMAIL_TEXT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>you@example.com</Value>
+      <Name>EMAIL_ALT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Email me!</Value>
+      <Name>EMAIL_ALT_TEXT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://soundcloud.com</Value>
+      <Name>SOUND_CLOUD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://figma.com</Value>
+      <Name>FIGMA</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://telegram.org/</Value>
+      <Name>TELEGRAM</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.tumblr.com/</Value>
+      <Name>TUMBLR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://steamcommunity.com/</Value>
+      <Name>STEAM</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://vimeo.com/</Value>
+      <Name>VIMEO</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://wordpress.com/</Value>
+      <Name>WORDPRESS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.goodreads.com/</Value>
+      <Name>GOODREADS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.skoob.com.br/</Value>
+      <Name>SKOOB</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://letterboxd.com/</Value>
+      <Name>LETTERBOXD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://mastodon.social/</Value>
+      <Name>MASTODON</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://micro.blog/</Value>
+      <Name>MICRO_BLOG</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.whatsapp.com/</Value>
+      <Name>WHATSAPP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.strava.com/</Value>
+      <Name>STRAVA</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.buymeacoffee.com/</Value>
+      <Name>BUYMEACOFFEE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.gitlab.com/</Value>
+      <Name>GITLAB</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.patreon.com/technotim</Value>
+      <Name>PATREON</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://dev.to/</Value>
+      <Name>DEVTO</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</Value>
+      <Name>UMAMI_WEBSITE_ID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://your-umami-app.com</Value>
+      <Name>https://your-umami-app.com</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON </Value>
+      <Name>BUTTON_ORDER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://www.paypal.me/user</Value>
+      <Name>PAYPAL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://slack.com</Value>
+      <Name>SLACK</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Visit My Site,Visit My OTHER Site</Value>
+      <Name>CUSTOM_BUTTON_TEXT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://technotim.live,https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A</Value>
+      <Name>CUSTOM_BUTTON_URL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>#ED2756,#0085FF</Value>
+      <Name>CUSTOM_BUTTON_COLOR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>#ffffff,#ffffff</Value>
+      <Name>CUSTOM_BUTTON_TEXT_COLOR</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Visit my site!,Visit my OTHER Site!</Value>
+      <Name>CUSTOM_BUTTON_ALT_TEXT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>HOMEPAGE,HOMEPAGE2</Value>
+      <Name>CUSTOM_BUTTON_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>https://stackoverflow.com</Value>
+      <Name>STACKOVERFLOW</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels>
+    <Label>
+      <Value>unless-stopped</Value>
+      <Name>restart</Name>
+      <Mode/>
+    </Label>
+    <Label>
+      <Value>no-new-privileges:true</Value>
+      <Name>security_opt</Name>
+      <Mode/>
+    </Label>
+  </Labels>
+  <Config Name="Web UI" Target="3000" Default="" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">1000</Config>
+  <Config Name="META_TITLE" Target="META_TITLE" Default="" Mode="" Description="Container Variable: META_TITLE" Type="Variable" Display="always" Required="false" Mask="false">Techno Tim</Config>
+  <Config Name="META_DESCRIPTION" Target="META_DESCRIPTION" Default="" Mode="" Description="Container Variable: META_DESCRIPTION" Type="Variable" Display="always" Required="false" Mask="false">Techno Tim Link page</Config>
+  <Config Name="META_AUTHOR" Target="META_AUTHOR" Default="" Mode="" Description="Container Variable: META_AUTHOR" Type="Variable" Display="always" Required="false" Mask="false">Techno Tim</Config>
+  <Config Name="LANG" Target="LANG" Default="" Mode="" Description="Container Variable: LANG" Type="Variable" Display="always" Required="false" Mask="false">en</Config>
+  <Config Name="META_INDEX_STATUS" Target="META_INDEX_STATUS" Default="" Mode="" Description="Container Variable: META_INDEX_STATUS" Type="Variable" Display="always" Required="false" Mask="false">all</Config>
+  <Config Name="GA_TRACKING_ID" Target="GA_TRACKING_ID" Default="" Mode="" Description="Container Variable: GA_TRACKING_ID" Type="Variable" Display="always" Required="false" Mask="false">G-XXXXXXXXXX</Config>
+  <Config Name="THEME" Target="THEME" Default="" Mode="" Description="Container Variable: THEME" Type="Variable" Display="always" Required="false" Mask="false">Dark</Config>
+  <Config Name="FAVICON_URL" Target="FAVICON_URL" Default="" Mode="" Description="Container Variable: FAVICON_URL" Type="Variable" Display="always" Required="false" Mask="false">https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_200x200.jpg</Config>
+  <Config Name="AVATAR_URL" Target="AVATAR_URL" Default="" Mode="" Description="Container Variable: AVATAR_URL" Type="Variable" Display="always" Required="false" Mask="false">qIAsKOpB_200x200.jpg</Config>
+  <Config Name="AVATAR_2X_URL" Target="AVATAR_2X_URL" Default="" Mode="" Description="Container Variable: AVATAR_2X_URL" Type="Variable" Display="always" Required="false" Mask="false">https://pbs.twimg.com/profile_images/1286144221217316864/qIAsKOpB_400x400.jpg</Config>
+  <Config Name="AVATAR_ALT" Target="AVATAR_ALT" Default="" Mode="" Description="Container Variable: AVATAR_ALT" Type="Variable" Display="always" Required="false" Mask="false">Techno Tim Profile Pic</Config>
+  <Config Name="NAME" Target="NAME" Default="" Mode="" Description="Container Variable: NAME" Type="Variable" Display="always" Required="false" Mask="false">TechnoTim</Config>
+  <Config Name="BIO" Target="BIO" Default="" Mode="" Description="Container Variable: BIO" Type="Variable" Display="always" Required="false" Mask="false">Hey! Just a place where you can connect with me!</Config>
+  <Config Name="FOOTER" Target="FOOTER" Default="" Mode="" Description="Container Variable: FOOTER" Type="Variable" Display="always" Required="false" Mask="false">Thanks for stopping by!</Config>
+  <Config Name="GITHUB" Target="GITHUB" Default="" Mode="" Description="Container Variable: GITHUB" Type="Variable" Display="always" Required="false" Mask="false">https://github.com/timothystewart6</Config>
+  <Config Name="TWITTER" Target="TWITTER" Default="" Mode="" Description="Container Variable: TWITTER" Type="Variable" Display="always" Required="false" Mask="false">https://twitter.com/TechnoTimLive</Config>
+  <Config Name="INSTAGRAM" Target="INSTAGRAM" Default="" Mode="" Description="Container Variable: INSTAGRAM" Type="Variable" Display="always" Required="false" Mask="false">https://www.instagram.com/techno.tim</Config>
+  <Config Name="YOUTUBE" Target="YOUTUBE" Default="" Mode="" Description="Container Variable: YOUTUBE" Type="Variable" Display="always" Required="false" Mask="false">https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A</Config>
+  <Config Name="TWITCH" Target="TWITCH" Default="" Mode="" Description="Container Variable: TWITCH" Type="Variable" Display="always" Required="false" Mask="false">https://www.twitch.tv/technotim/</Config>
+  <Config Name="DISCORD" Target="DISCORD" Default="" Mode="" Description="Container Variable: DISCORD" Type="Variable" Display="always" Required="false" Mask="false">https://discord.gg/DJKexrJ</Config>
+  <Config Name="TIKTOK" Target="TIKTOK" Default="" Mode="" Description="Container Variable: TIKTOK" Type="Variable" Display="always" Required="false" Mask="false">https://www.tiktok.com/@technotim</Config>
+  <Config Name="KIT" Target="KIT" Default="" Mode="" Description="Container Variable: KIT" Type="Variable" Display="always" Required="false" Mask="false">https://kit.co/TechnoTim</Config>
+  <Config Name="FACEBOOK" Target="FACEBOOK" Default="" Mode="" Description="Container Variable: FACEBOOK" Type="Variable" Display="always" Required="false" Mask="false">https://facebook.com</Config>
+  <Config Name="FACEBOOK_MESSENGER" Target="FACEBOOK_MESSENGER" Default="" Mode="" Description="Container Variable: FACEBOOK_MESSENGER" Type="Variable" Display="always" Required="false" Mask="false">https://facebook.com</Config>
+  <Config Name="LINKED_IN" Target="LINKED_IN" Default="" Mode="" Description="Container Variable: LINKED_IN" Type="Variable" Display="always" Required="false" Mask="false">https://linkedin.com</Config>
+  <Config Name="PRODUCT_HUNT" Target="PRODUCT_HUNT" Default="" Mode="" Description="Container Variable: PRODUCT_HUNT" Type="Variable" Display="always" Required="false" Mask="false">https://www.producthunt.com/</Config>
+  <Config Name="SNAPCHAT" Target="SNAPCHAT" Default="" Mode="" Description="Container Variable: SNAPCHAT" Type="Variable" Display="always" Required="false" Mask="false">https://www.snapchat.com/</Config>
+  <Config Name="SPOTIFY" Target="SPOTIFY" Default="" Mode="" Description="Container Variable: SPOTIFY" Type="Variable" Display="always" Required="false" Mask="false">https://www.spotify.com/</Config>
+  <Config Name="REDDIT" Target="REDDIT" Default="" Mode="" Description="Container Variable: REDDIT" Type="Variable" Display="always" Required="false" Mask="false">https://www.reddit.com/</Config>
+  <Config Name="MEDIUM" Target="MEDIUM" Default="" Mode="" Description="Container Variable: MEDIUM" Type="Variable" Display="always" Required="false" Mask="false">https://medium.com</Config>
+  <Config Name="PINTEREST" Target="PINTEREST" Default="" Mode="" Description="Container Variable: PINTEREST" Type="Variable" Display="always" Required="false" Mask="false">https://www.pinterest.com/</Config>
+  <Config Name="EMAIL" Target="EMAIL" Default="" Mode="" Description="Container Variable: EMAIL" Type="Variable" Display="always" Required="false" Mask="false">you@example.com</Config>
+  <Config Name="EMAIL_TEXT" Target="EMAIL_TEXT" Default="" Mode="" Description="Container Variable: EMAIL_TEXT" Type="Variable" Display="always" Required="false" Mask="false">Email Me!</Config>
+  <Config Name="EMAIL_ALT" Target="EMAIL_ALT" Default="" Mode="" Description="Container Variable: EMAIL_ALT" Type="Variable" Display="always" Required="false" Mask="false">you@example.com</Config>
+  <Config Name="EMAIL_ALT_TEXT" Target="EMAIL_ALT_TEXT" Default="" Mode="" Description="Container Variable: EMAIL_ALT_TEXT" Type="Variable" Display="always" Required="false" Mask="false">Email me!</Config>
+  <Config Name="SOUND_CLOUD" Target="SOUND_CLOUD" Default="" Mode="" Description="Container Variable: SOUND_CLOUD" Type="Variable" Display="always" Required="false" Mask="false">https://soundcloud.com</Config>
+  <Config Name="FIGMA" Target="FIGMA" Default="" Mode="" Description="Container Variable: FIGMA" Type="Variable" Display="always" Required="false" Mask="false">https://figma.com</Config>
+  <Config Name="TELEGRAM" Target="TELEGRAM" Default="" Mode="" Description="Container Variable: TELEGRAM" Type="Variable" Display="always" Required="false" Mask="false">https://telegram.org/</Config>
+  <Config Name="TUMBLR" Target="TUMBLR" Default="" Mode="" Description="Container Variable: TUMBLR" Type="Variable" Display="always" Required="false" Mask="false">https://www.tumblr.com/</Config>
+  <Config Name="STEAM" Target="STEAM" Default="" Mode="" Description="Container Variable: STEAM" Type="Variable" Display="always" Required="false" Mask="false">https://steamcommunity.com/</Config>
+  <Config Name="VIMEO" Target="VIMEO" Default="" Mode="" Description="Container Variable: VIMEO" Type="Variable" Display="always" Required="false" Mask="false">https://vimeo.com/</Config>
+  <Config Name="WORDPRESS" Target="WORDPRESS" Default="" Mode="" Description="Container Variable: WORDPRESS" Type="Variable" Display="always" Required="false" Mask="false">https://wordpress.com/</Config>
+  <Config Name="GOODREADS" Target="GOODREADS" Default="" Mode="" Description="Container Variable: GOODREADS" Type="Variable" Display="always" Required="false" Mask="false">https://www.goodreads.com/</Config>
+  <Config Name="SKOOB" Target="SKOOB" Default="" Mode="" Description="Container Variable: SKOOB" Type="Variable" Display="always" Required="false" Mask="false">https://www.skoob.com.br/</Config>
+  <Config Name="LETTERBOXD" Target="LETTERBOXD" Default="" Mode="" Description="Container Variable: LETTERBOXD" Type="Variable" Display="always" Required="false" Mask="false">https://letterboxd.com/</Config>
+  <Config Name="MASTODON" Target="MASTODON" Default="" Mode="" Description="Container Variable: MASTODON" Type="Variable" Display="always" Required="false" Mask="false">https://mastodon.social/</Config>
+  <Config Name="MICRO_BLOG" Target="MICRO_BLOG" Default="" Mode="" Description="Container Variable: MICRO_BLOG" Type="Variable" Display="always" Required="false" Mask="false">https://micro.blog/</Config>
+  <Config Name="WHATSAPP" Target="WHATSAPP" Default="" Mode="" Description="Container Variable: WHATSAPP" Type="Variable" Display="always" Required="false" Mask="false">https://www.whatsapp.com/</Config>
+  <Config Name="STRAVA" Target="STRAVA" Default="" Mode="" Description="Container Variable: STRAVA" Type="Variable" Display="always" Required="false" Mask="false">https://www.strava.com/</Config>
+  <Config Name="BUYMEACOFFEE" Target="BUYMEACOFFEE" Default="" Mode="" Description="Container Variable: BUYMEACOFFEE" Type="Variable" Display="always" Required="false" Mask="false">https://www.buymeacoffee.com/</Config>
+  <Config Name="GITLAB" Target="GITLAB" Default="" Mode="" Description="Container Variable: GITLAB" Type="Variable" Display="always" Required="false" Mask="false">https://www.gitlab.com/</Config>
+  <Config Name="PATREON" Target="PATREON" Default="" Mode="" Description="Container Variable: PATREON" Type="Variable" Display="always" Required="false" Mask="false">https://www.patreon.com/technotim</Config>
+  <Config Name="DEVTO" Target="DEVTO" Default="" Mode="" Description="Container Variable: DEVTO" Type="Variable" Display="always" Required="false" Mask="false">https://dev.to/</Config>
+  <Config Name="UMAMI_WEBSITE_ID" Target="UMAMI_WEBSITE_ID" Default="" Mode="" Description="Container Variable: UMAMI_WEBSITE_ID" Type="Variable" Display="always" Required="false" Mask="false">xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</Config>
+  <Config Name="UMAMI_APP_URL" Target="https://your-umami-app.com" Default="" Mode="" Description="Container Variable: https://your-umami-app.com" Type="Variable" Display="always" Required="false" Mask="false">https://your-umami-app.com</Config>
+  <Config Name="BUTTON_ORDER" Target="BUTTON_ORDER" Default="" Mode="" Description="Container Variable: BUTTON_ORDER" Type="Variable" Display="always" Required="false" Mask="false">YOUTUBE,TWITCH,TWITTER,GITHUB,INSTAGRAM,DISCORD,FACEBOOK,TIKTOK,KIT,PATREON </Config>
+  <Config Name="PAYPAL" Target="PAYPAL" Default="" Mode="" Description="Container Variable: PAYPAL" Type="Variable" Display="always" Required="false" Mask="false">https://www.paypal.me/user</Config>
+  <Config Name="SLACK" Target="SLACK" Default="" Mode="" Description="Container Variable: SLACK" Type="Variable" Display="always" Required="false" Mask="false">https://slack.com</Config>
+  <Config Name="CUSTOM_BUTTON_TEXT" Target="CUSTOM_BUTTON_TEXT" Default="" Mode="" Description="Container Variable: CUSTOM_BUTTON_TEXT" Type="Variable" Display="always" Required="false" Mask="false">Visit My Site,Visit My OTHER Site</Config>
+  <Config Name="CUSTOM_BUTTON_URL" Target="CUSTOM_BUTTON_URL" Default="" Mode="" Description="Container Variable: CUSTOM_BUTTON_URL" Type="Variable" Display="always" Required="false" Mask="false">https://technotim.live,https://www.youtube.com/channel/UCOk-gHyjcWZNj3Br4oxwh0A</Config>
+  <Config Name="CUSTOM_BUTTON_COLOR" Target="CUSTOM_BUTTON_COLOR" Default="" Mode="" Description="Container Variable: CUSTOM_BUTTON_COLOR" Type="Variable" Display="always" Required="false" Mask="false">#ED2756,#0085FF</Config>
+  <Config Name="CUSTOM_BUTTON_TEXT_COLOR" Target="CUSTOM_BUTTON_TEXT_COLOR" Default="" Mode="" Description="Container Variable: CUSTOM_BUTTON_TEXT_COLOR" Type="Variable" Display="always" Required="false" Mask="false">#ffffff,#ffffff</Config>
+  <Config Name="CUSTOM_BUTTON_ALT_TEXT" Target="CUSTOM_BUTTON_ALT_TEXT" Default="" Mode="" Description="Container Variable: CUSTOM_BUTTON_ALT_TEXT" Type="Variable" Display="always" Required="false" Mask="false">Visit my site!,Visit my OTHER Site!</Config>
+  <Config Name="CUSTOM_BUTTON_NAME" Target="CUSTOM_BUTTON_NAME" Default="" Mode="" Description="Container Variable: CUSTOM_BUTTON_NAME" Type="Variable" Display="always" Required="false" Mask="false">HOMEPAGE,HOMEPAGE2</Config>
+  <Config Name="STACKOVERFLOW" Target="STACKOVERFLOW" Default="" Mode="" Description="Container Variable: STACKOVERFLOW" Type="Variable" Display="always" Required="false" Mask="false">https://stackoverflow.com</Config>
+  <Config Name="restart" Target="restart" Default="" Mode="" Description="Container Label: restart" Type="Label" Display="always" Required="false" Mask="false">unless-stopped</Config>
+  <Config Name="security_opt" Target="security_opt" Default="" Mode="" Description="Container Label: security_opt" Type="Label" Display="always" Required="false" Mask="false">no-new-privileges:true</Config>
+</Container>

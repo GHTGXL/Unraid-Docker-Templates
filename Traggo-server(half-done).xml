@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>traggo-server</Name>
+  <Repository>traggo/server:latest</Repository>
+  <Registry>https://hub.docker.com/r/traggo/server/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:3030]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1637401639</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3030</HostPort>
+        <ContainerPort>3030</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/traggo/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>admin</Value>
+      <Name>TRAGGO_DEFAULT_USER_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>admin</Value>
+      <Name>TRAGGO_DEFAULT_USER_PASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>10</Value>
+      <Name>TRAGGO_PASS_STRENGTH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>info</Value>
+      <Name>TRAGGO_LOG_LEVEL</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Web UI" Target="3030" Default="" Mode="tcp" Description="Container Port: 3030" Type="Port" Display="always" Required="false" Mask="false">3030</Config>
+  <Config Name="Host Key 1" Target="TRAGGO_DEFAULT_USER_NAME" Default="admin" Mode="" Description="Container Variable: TRAGGO_DEFAULT_USER_NAME" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="TRAGGO_DEFAULT_USER_PASS" Target="TRAGGO_DEFAULT_USER_PASS" Default="mynewpassword" Mode="" Description="Container Variable: TRAGGO_DEFAULT_USER_PASS" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="/traggodata-config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/traggo/</Config>
+  <Config Name="TRAGGO_PASS_STRENGTH" Target="TRAGGO_PASS_STRENGTH" Default="10" Mode="" Description="Container Variable: TRAGGO_PASS_STRENGTH" Type="Variable" Display="always" Required="false" Mask="false">10</Config>
+  <Config Name="TRAGGO_LOG_LEVEL" Target="TRAGGO_LOG_LEVEL" Default="" Mode="" Description="Container Variable: TRAGGO_LOG_LEVEL" Type="Variable" Display="always" Required="false" Mask="false">info</Config>
+</Container>
