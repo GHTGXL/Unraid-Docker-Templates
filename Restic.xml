@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>restic</Name>
+  <Repository>hortio/restic:latest</Repository>
+  <Registry>https://hub.docker.com/r/hortio/restic</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://hub.docker.com/r/lobaro/restic-backup-docker/</Support>
+  <Project>https://github.com/restic/restic</Project>
+  <Overview>Production ready flexible automation for regular backups with Restic.&#xD;
+Add folders to be backed up as paths under the container's /data/ path.&#xD;
+&#xD;
+To start a manual backup:&#xD;
+Run the following from the unraid shell (ie SSH)&#xD;
+docker exec restic /bin/backup</Overview>
+  <Category>Backup: Cloud:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/BenSchmidtTech/unraid-docker-templates/raw/main/restic_icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1660064350</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="BU Source #1" Target="/data/" Default="" Mode="rw" Description="This container will backup everything in it's /data/ path to the RESTIC_REPOSITORY&#13;&#10;&#13;&#10;Add backup sources by creating Path variables to mount the source under the container's /data/ path.&#13;&#10;&#13;&#10;For Example:&#13;&#10;Host Path: /mnt/user/appdata&#13;&#10;Container Path: /data/appdata" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/unraid-system-backup</Config>
+  <Config Name="RESTIC_REPOSITORY" Target="RESTIC_REPOSITORY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">b2:For-Restic-GXLNAS</Config>
+  <Config Name="RESTIC_PASSWORD" Target="RESTIC_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true">m6H*$cACfRbkW4$S</Config>
+  <Config Name="BACKUP_CRON" Target="BACKUP_CRON" Default="0 */6 * * *" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">0 */6 * * *</Config>
+  <Config Name="B2_ACCOUNT_ID" Target="B2_ACCOUNT_ID" Default="" Mode="" Description="(Optional) Container Variable: B2_ACCOUNT_ID=&#13;&#10;When using restic with B2 storage." Type="Variable" Display="always" Required="false" Mask="false">003cb4f44a215c70000000002</Config>
+  <Config Name="B2_ACCOUNT_KEY" Target="B2_ACCOUNT_KEY" Default="" Mode="" Description="(Optional) Container Variable: B2_ACCOUNT_KEY  &#13;&#10;When using restic with B2 storage." Type="Variable" Display="always" Required="false" Mask="true">K00323G0CYM1jbD9Uv4jNXUKI7NQmVo</Config>
+  <Config Name="RESTIC_TAG" Target="RESTIC_TAG" Default="" Mode="" Description="(Optional) Container Variable: RESTIC_TAG&#13;&#10;To tag the images created by the container." Type="Variable" Display="advanced" Required="false" Mask="false">test</Config>
+  <Config Name="RESTIC_FORGET_ARGS" Target="RESTIC_FORGET_ARGS" Default="" Mode="" Description="(Optional) Container Variable: RESTIC_FORGET_ARGS&#13;&#10;Only if specified restic forget is run with the given arguments after each backup. Example value: -e " Type="Variable" Display="advanced" Required="false" Mask="false">--keep-last 10</Config>
+  <Config Name="RESTIC_JOB_ARGS" Target="RESTIC_JOB_ARGS" Default="" Mode="" Description="(Optional) Container Variable: RESTIC_JOB_ARGS&#13;&#10;Allows to specify extra arguments to the back up job such as limiting bandwith with --limit-upload or excluding file masks with --exclude" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="MAILX_ARGS" Target="MAILX_ARGS" Default="" Mode="" Description="Optional. If specified, the content of /var/log/backup-last.log is sent via mail after each backup using an external SMTP. To have maximum flexibility, you have to specify the mail/smtp parameters by your own. Have a look at the mailx manpage for further information. Example value: -e " Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
